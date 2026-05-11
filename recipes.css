@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --sage: #5e7d5e;
+  --terracotta: #d97a5c;
+  --cream: #fdfaf5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  /* Texture to remove whitespace */
+  background-image: url('https://www.transparenttextures.com/patterns/pinstripe.png');
+}
+
+ .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+h1, h2{
+      color: black;
+  background-color: #ede4d5;
+}
+
+/* Header Styling */
+.recipe-header {
+  height: 50vh;
+  min-height: 400px;
+  background: url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg') center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.header-content { z-index: 1; }
+
+/* Search Section Styling */
+.search-card {
+  border: none;
+  background: white;
+}
+
+.ingredient-box {
+  background: #f8f9fa;
+  border-left: 4px solid var(--sage);
+}
+
+#ingredientDisplay {
+  color: var(--sage);
+  font-size: 1.1rem;
+}
+
+/* Custom Buttons */
+.btn-primary { background-color: var(--sage); border: none; }
+.btn-success { background-color: var(--terracotta); border: none; }
+
+/* Recipe Results Grid */
+.recipe-card {
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.missing-label {
+  color: var(--terracotta);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+}

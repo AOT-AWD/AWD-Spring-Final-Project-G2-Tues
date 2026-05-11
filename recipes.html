@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenna's Kitchen - Recipes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="recipes.css" />
+
+        <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="VY-ICIr4c7qqENBwLB90w";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Jenna's Kitchen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" style="font-family: Roboto">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="font-family: Roboto">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html" style="font-family: Roboto">Recipes</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="blog.html" style="font-family: Roboto">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Roboto">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="recipe-header d-flex align-items-center justify-content-center text-center">
+        <div class="header-overlay"></div>
+        <div class="header-content animate__animated animate__fadeIn">
+            <h1 class="display-3 fw-bold">Find Your Next Favorite Meal</h1>
+            <p class="lead">Enter what you have in your fridge, and we'll do the rest.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row align-items-center g-5 search-card shadow-sm bg-white rounded-4 overflow-hidden">
+            <div class="col-lg-6 p-0">
+                <img src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg" class="img-fluid h-100" style="object-fit: cover; min-height: 450px;" alt="Fresh Ingredients">
+            </div>
+            
+            <div class="col-lg-6 p-5">
+                <h2 class="mb-4">Search by Ingredients</h2>
+                <div class="input-group mb-3 custom-input-group">
+                    <input type="text" id="ingredientInput" class="form-control" placeholder="Ex: Chicken, Spinach, Garlic">
+                    <button class="btn btn-primary" type="button" onclick="addIngredient()">Add Ingredient</button>
+                </div>
+
+                <div class="ingredient-box p-3 mb-4 rounded">
+                    <small class="text-muted d-block mb-1">Your Ingredients:</small>
+                    <p id="ingredientDisplay" class="fw-bold m-0">None added yet</p>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex">
+                    <button class="btn btn-success btn-lg px-4" onclick="recipeSearch()">Recipe Search</button>
+                    <button class="btn btn-outline-danger btn-lg px-4" onclick="newSearch()">Start Over</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="recipe-results" class="row mt-5">
+            </div>
+    </main>
+
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="logo-part">
+                                <img src="./jenna_company_logo.png" class="w-50 logo-footer" alt="Logo">
+                                <p>911 Hillside Dr, Kodiak, Alaska 99615, USA</p>
+                                <p>(111)-222-3333</p>
+                                <p>jenna@recipes.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-4">
+                            <h6>About Company</h6>
+                            <p>Jenna's Kitchen is a home cooking site built on the belief that great meals don't require culinary school.</p>
+                            <a href="about.html" class="btn-footer">More Info</a><br>
+                            <a href="contact.html" class="btn-footer">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 px-4">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Newsletter</h6>
+                            <div class="social mb-3">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                                <button class="btn btn-outline-secondary" type="button">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="recipes.js"></script>
+</body>
+</html>

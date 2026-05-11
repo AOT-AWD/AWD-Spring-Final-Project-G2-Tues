@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenna's Kitchen - About Me</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="about.css" />
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Jenna's Kitchen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" style="font-family: Roboto">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="font-family: Roboto">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html" style="font-family: Roboto">Recipes</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="blog.html" style="font-family: Roboto">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Roboto">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-header d-flex align-items-center justify-content-center text-center">
+        <div class="header-overlay"></div>
+        <div class="header-content animate__animated animate__fadeIn">
+            <h1 class="display-3 fw-bold">The Story Behind the Stove</h1>
+            <p class="lead">From burnt pans to culinary inspiration.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="row align-items-center g-5 mb-5">
+            <div class="col-lg-5 animate__animated animate__fadeInLeft">
+                <div class="history-img-container shadow">
+                    <img src="https://images.pexels.com/photos/7964694/pexels-photo-7964694.jpeg?_gl=1*38lz1r*_ga*MTc2MTE0MTk3MS4xNzc3NzYzODQ3*_ga_8JE65Q40S6*czE3NzgwMTYxODgkbzckZzEkdDE3NzgwMTYzMTQkajIyJGwwJGgw" 
+                         class="img-fluid rounded-4" alt="Jenna Cooking">
+                    <!--
+                    <video class="hero-video" class="img-fluid rounded-4" muted playsinline>
+                        <source src="./jenna_vid.mp4" type="video/mp4">
+                    </video>
+                    -->
+                </div>
+            </div>
+            <div class="col-lg-7 animate__animated animate__fadeInRight">
+                <h2 class="mb-4">My Journey</h2>
+                <p class="description-text">
+                    I’ve always been obsessed with the way a great meal brings people together, but for a long time, I felt like a bit of a fraud because I couldn’t just "invent" recipes on the fly.
+                </p>
+                <p class="description-text">
+                    It took a lot of burnt pans and mediocre dinners to realize that inspiration isn't a superpower, it’s a habit. 
+                    I started documenting my process not because I’m a culinary wizard, but because I know how frustrating that "what’s for dinner?" blank stare can be. 
+                </p>
+                <div class="quote-box p-4 rounded-3 border-start border-4">
+                    <p class="fst-italic m-0">"Inspiration isn't a superpower, it's a habit."</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section>
+            <div class="text-center mb-5">
+                <h2 class="display-5">Jenna's Current Favorites</h2>
+                <p class="text-muted">Hand-picked inspiration for your next meal</p>
+            </div>
+            <div id="favorite-recipes" class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img id="img1" src="" class="card-img-top" alt="Favorite 1">
+                        <div class="card-body">
+                            <h5 id="title1" class="card-title fw-bold"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img id="img2" src="" class="card-img-top" alt="Favorite 2">
+                        <div class="card-body">
+                            <h5 id="title2" class="card-title fw-bold"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img id="img3" src="" class="card-img-top" alt="Favorite 3">
+                        <div class="card-body">
+                            <h5 id="title3" class="card-title fw-bold"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="logo-part">
+                                <img src="./jenna_company_logo.png" class="w-50 logo-footer" alt="Logo">
+                                <p>911 Hillside Dr, Kodiak, Alaska 99615, USA</p>
+                                <p>(111)-222-3333</p>
+                                <p>jenna@recipes.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-4">
+                            <h6>About Company</h6>
+                            <p>Jenna's Kitchen is a home cooking site built on the belief that great meals don't require culinary school.</p>
+                            <a href="about.html" class="btn-footer">More Info</a><br>
+                            <a href="contact.html" class="btn-footer">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 px-4">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Newsletter</h6>
+                            <div class="social mb-3">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="form-control">
+                                <button class="btn btn-outline-secondary" type="button">Sign up</button>
+                            </div>
+                            <p class="mt-2" style="font-size: 11px;">Sign up to get Jenna's latest dishes straight to your inbox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
+</body>
+
+<script>
+  (function(){
+    if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+      window.chatbase = (...arguments) => {
+        if(!window.chatbase.q){ window.chatbase.q = [] }
+        window.chatbase.q.push(arguments)
+      };
+      window.chatbase = new Proxy(window.chatbase, {
+        get(target, prop){
+          if(prop === "q"){ return target.q }
+          return (...args) => target(prop, ...args)
+        }
+      })
+    }
+    const onLoad = function(){
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "VY-ICIr4c7qqENBwLB90w";
+      script.domain = "www.chatbase.co";
+      document.body.appendChild(script)
+    };
+    if(document.readyState === "complete"){ onLoad() }
+    else { window.addEventListener("load", onLoad) }
+  })();
+</script>
+</html>

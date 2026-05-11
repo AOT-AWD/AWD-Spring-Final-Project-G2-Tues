@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --sage: #5e7d5e;
+  --terracotta: #d97a5c;
+  --cream: #fdfaf5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  background-image: url('https://www.transparenttextures.com/patterns/pinstripe.png');
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+h1{
+    color: black;
+    background-color: rgb(234, 214, 189);
+}
+
+/* Header/Hero */
+.about-header {
+  height: 45vh;
+  background: url('https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg') center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.header-content { z-index: 1; }
+
+/* History Section */
+.history-img-container {
+  border: 10px solid white;
+  border-radius: 20px;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.quote-box {
+  background-color: #f0f4f0;
+  border-color: var(--sage) !important;
+  color: var(--sage);
+  font-size: 1.2rem;
+}
+
+/* Recipe Cards */
+.recipe-card {
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  background: white;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary { background-color: var(--sage); border: none; }
+.btn-primary:hover { background-color: #4a634a; }
+
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  color: #666;
+}
